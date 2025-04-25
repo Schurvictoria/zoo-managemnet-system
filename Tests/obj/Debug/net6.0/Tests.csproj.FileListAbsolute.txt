@@ -1,0 +1,4 @@
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Tests\obj\Debug\net6.0\Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Tests\obj\Debug\net6.0\Tests.AssemblyInfoInputs.cache
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Tests\obj\Debug\net6.0\Tests.AssemblyInfo.cs
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Tests\obj\Debug\net6.0\Tests.csproj.CoreCompileInputs.cache

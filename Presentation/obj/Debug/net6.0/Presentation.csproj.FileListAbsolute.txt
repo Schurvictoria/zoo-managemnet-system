@@ -1,0 +1,11 @@
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Presentation\bin\Debug\net6.0\Presentation.deps.json
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Presentation\bin\Debug\net6.0\Presentation.dll
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Presentation\bin\Debug\net6.0\Presentation.pdb
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Presentation\obj\Debug\net6.0\Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Presentation\obj\Debug\net6.0\Presentation.AssemblyInfoInputs.cache
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Presentation\obj\Debug\net6.0\Presentation.AssemblyInfo.cs
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Presentation\obj\Debug\net6.0\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Presentation\obj\Debug\net6.0\Presentation.dll
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Presentation\obj\Debug\net6.0\refint\Presentation.dll
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Presentation\obj\Debug\net6.0\Presentation.pdb
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Presentation\obj\Debug\net6.0\ref\Presentation.dll

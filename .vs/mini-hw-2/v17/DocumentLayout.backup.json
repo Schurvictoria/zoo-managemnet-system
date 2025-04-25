@@ -1,0 +1,543 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8C59C2FE-9449-4AC1-B73F-4B6362E605CC}|Domain\\Domain.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8C59C2FE-9449-4AC1-B73F-4B6362E605CC}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BBCB82-7D62-458A-808E-D6E35CA28972}|mini-hw-2\\Application.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\mini-hw-2\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{49BBCB82-7D62-458A-808E-D6E35CA28972}|mini-hw-2\\Application.csproj|solutionrelative:mini-hw-2\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE588F23-5658-472E-9E85-4707ACEF6F29}|Infrastructure\\Infrastructure.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CE588F23-5658-472E-9E85-4707ACEF6F29}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A64E863-478A-4BF9-87BB-21C6EBDD81E9}|Presentation\\Presentation.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\presentation\\presentation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4A64E863-478A-4BF9-87BB-21C6EBDD81E9}|Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8617B7D-FE25-40EF-82D3-77908CDD9DDE}|Tests\\Tests.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\tests\\tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C8617B7D-FE25-40EF-82D3-77908CDD9DDE}|Tests\\Tests.csproj|solutionrelative:tests\\tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BBCB82-7D62-458A-808E-D6E35CA28972}|mini-hw-2\\Application.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\mini-hw-2\\services\\animaltransferservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49BBCB82-7D62-458A-808E-D6E35CA28972}|mini-hw-2\\Application.csproj|solutionrelative:mini-hw-2\\services\\animaltransferservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A64E863-478A-4BF9-87BB-21C6EBDD81E9}|Presentation\\Presentation.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\presentation\\controllers\\transfercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A64E863-478A-4BF9-87BB-21C6EBDD81E9}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\transfercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8617B7D-FE25-40EF-82D3-77908CDD9DDE}|Tests\\Tests.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\tests\\feedingorganizationservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8617B7D-FE25-40EF-82D3-77908CDD9DDE}|Tests\\Tests.csproj|solutionrelative:tests\\feedingorganizationservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8617B7D-FE25-40EF-82D3-77908CDD9DDE}|Tests\\Tests.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\tests\\animaltransferservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8617B7D-FE25-40EF-82D3-77908CDD9DDE}|Tests\\Tests.csproj|solutionrelative:tests\\animaltransferservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A64E863-478A-4BF9-87BB-21C6EBDD81E9}|Presentation\\Presentation.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\presentation\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A64E863-478A-4BF9-87BB-21C6EBDD81E9}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A64E863-478A-4BF9-87BB-21C6EBDD81E9}|Presentation\\Presentation.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\presentation\\controllers\\feedingschedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A64E863-478A-4BF9-87BB-21C6EBDD81E9}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\feedingschedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A64E863-478A-4BF9-87BB-21C6EBDD81E9}|Presentation\\Presentation.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\presentation\\controllers\\enclosurescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A64E863-478A-4BF9-87BB-21C6EBDD81E9}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\enclosurescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A64E863-478A-4BF9-87BB-21C6EBDD81E9}|Presentation\\Presentation.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\presentation\\controllers\\animalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A64E863-478A-4BF9-87BB-21C6EBDD81E9}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\animalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\ZooManagementSystem.csproj||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|solutionrelative:ZooManagementSystem.csproj||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE588F23-5658-472E-9E85-4707ACEF6F29}|Infrastructure\\Infrastructure.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\infrastructure\\repositories\\feedingschedulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE588F23-5658-472E-9E85-4707ACEF6F29}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\feedingschedulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE588F23-5658-472E-9E85-4707ACEF6F29}|Infrastructure\\Infrastructure.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\infrastructure\\repositories\\enclosurerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE588F23-5658-472E-9E85-4707ACEF6F29}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\enclosurerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE588F23-5658-472E-9E85-4707ACEF6F29}|Infrastructure\\Infrastructure.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\infrastructure\\repositories\\animalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE588F23-5658-472E-9E85-4707ACEF6F29}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\animalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C59C2FE-9449-4AC1-B73F-4B6362E605CC}|Domain\\Domain.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\domain\\entities\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C59C2FE-9449-4AC1-B73F-4B6362E605CC}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C59C2FE-9449-4AC1-B73F-4B6362E605CC}|Domain\\Domain.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\domain\\entities\\feedingschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C59C2FE-9449-4AC1-B73F-4B6362E605CC}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\feedingschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C59C2FE-9449-4AC1-B73F-4B6362E605CC}|Domain\\Domain.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\domain\\entities\\enclosure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C59C2FE-9449-4AC1-B73F-4B6362E605CC}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\enclosure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C59C2FE-9449-4AC1-B73F-4B6362E605CC}|Domain\\Domain.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\domain\\domain.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{8C59C2FE-9449-4AC1-B73F-4B6362E605CC}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BBCB82-7D62-458A-808E-D6E35CA28972}|mini-hw-2\\Application.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\mini-hw-2\\services\\zoostatisticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49BBCB82-7D62-458A-808E-D6E35CA28972}|mini-hw-2\\Application.csproj|solutionrelative:mini-hw-2\\services\\zoostatisticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BBCB82-7D62-458A-808E-D6E35CA28972}|mini-hw-2\\Application.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\mini-hw-2\\services\\feedingorganizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49BBCB82-7D62-458A-808E-D6E35CA28972}|mini-hw-2\\Application.csproj|solutionrelative:mini-hw-2\\services\\feedingorganizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BBCB82-7D62-458A-808E-D6E35CA28972}|mini-hw-2\\Application.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\mini-hw-2\\interfaces\\izoostatisticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49BBCB82-7D62-458A-808E-D6E35CA28972}|mini-hw-2\\Application.csproj|solutionrelative:mini-hw-2\\interfaces\\izoostatisticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BBCB82-7D62-458A-808E-D6E35CA28972}|mini-hw-2\\Application.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\mini-hw-2\\interfaces\\ifeedingorganizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49BBCB82-7D62-458A-808E-D6E35CA28972}|mini-hw-2\\Application.csproj|solutionrelative:mini-hw-2\\interfaces\\ifeedingorganizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BBCB82-7D62-458A-808E-D6E35CA28972}|mini-hw-2\\Application.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\mini-hw-2\\interfaces\\ianimaltransferservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49BBCB82-7D62-458A-808E-D6E35CA28972}|mini-hw-2\\Application.csproj|solutionrelative:mini-hw-2\\interfaces\\ianimaltransferservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C59C2FE-9449-4AC1-B73F-4B6362E605CC}|Domain\\Domain.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\domain\\enums\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C59C2FE-9449-4AC1-B73F-4B6362E605CC}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C59C2FE-9449-4AC1-B73F-4B6362E605CC}|Domain\\Domain.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\domain\\enums\\enclosuretype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C59C2FE-9449-4AC1-B73F-4B6362E605CC}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\enclosuretype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C59C2FE-9449-4AC1-B73F-4B6362E605CC}|Domain\\Domain.csproj|c:\\users\\schur\\onedrive\\desktop\\mini-hw-2\\domain\\enums\\animalstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C59C2FE-9449-4AC1-B73F-4B6362E605CC}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\animalstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Domain\\FeedingTimeEvent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\FeedingTimeEvent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Domain\\AnimalMovedEventc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\AnimalMovedEventc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Domain\\Domain.csproj",
+              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Domain\\Domain.csproj",
+              "RelativeToolTip": "Domain\\Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-20T12:03:50.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Domain",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Domain\\Domain.csproj",
+              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Domain\\Domain.csproj",
+              "RelativeToolTip": "Domain\\Domain.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-20T11:52:45.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Tests.csproj",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Tests\\Tests.csproj",
+              "RelativeDocumentMoniker": "Tests\\Tests.csproj",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Tests\\Tests.csproj",
+              "RelativeToolTip": "Tests\\Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-20T11:50:34.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ZooManagementSystem.csproj",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\ZooManagementSystem.csproj",
+              "RelativeDocumentMoniker": "ZooManagementSystem.csproj",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\ZooManagementSystem.csproj",
+              "RelativeToolTip": "ZooManagementSystem.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-20T11:41:27.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:40:18.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FeedingOrganizationServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Tests\\FeedingOrganizationServiceTests.cs",
+              "RelativeDocumentMoniker": "Tests\\FeedingOrganizationServiceTests.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Tests\\FeedingOrganizationServiceTests.cs",
+              "RelativeToolTip": "Tests\\FeedingOrganizationServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:39:57.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AnimalTransferServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Tests\\AnimalTransferServiceTests.cs",
+              "RelativeDocumentMoniker": "Tests\\AnimalTransferServiceTests.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Tests\\AnimalTransferServiceTests.cs",
+              "RelativeToolTip": "Tests\\AnimalTransferServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:39:33.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StatisticsController.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Presentation\\Controllers\\StatisticsController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\StatisticsController.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Presentation\\Controllers\\StatisticsController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\StatisticsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:39:03.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TransferController.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Presentation\\Controllers\\TransferController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\TransferController.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Presentation\\Controllers\\TransferController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\TransferController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:38:42.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FeedingScheduleController.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Presentation\\Controllers\\FeedingScheduleController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\FeedingScheduleController.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Presentation\\Controllers\\FeedingScheduleController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\FeedingScheduleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:38:34.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EnclosuresController.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Presentation\\Controllers\\EnclosuresController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\EnclosuresController.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Presentation\\Controllers\\EnclosuresController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\EnclosuresController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:38:24.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Presentation.csproj",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Presentation\\Presentation.csproj",
+              "RelativeDocumentMoniker": "Presentation\\Presentation.csproj",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Presentation\\Presentation.csproj",
+              "RelativeToolTip": "Presentation\\Presentation.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-20T11:37:22.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FeedingScheduleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Infrastructure\\Repositories\\FeedingScheduleRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\FeedingScheduleRepository.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Infrastructure\\Repositories\\FeedingScheduleRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\FeedingScheduleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:37:13.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EnclosureRepository.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Infrastructure\\Repositories\\EnclosureRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\EnclosureRepository.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Infrastructure\\Repositories\\EnclosureRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\EnclosureRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:37:05.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AnimalRepository.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Infrastructure\\Repositories\\AnimalRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\AnimalRepository.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Infrastructure\\Repositories\\AnimalRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\AnimalRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:36:56.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Infrastructure\\Infrastructure.csproj",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Infrastructure\\Infrastructure.csproj",
+              "RelativeToolTip": "Infrastructure\\Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-20T11:36:27.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FeedingOrganizationService.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\mini-hw-2\\Services\\FeedingOrganizationService.cs",
+              "RelativeDocumentMoniker": "mini-hw-2\\Services\\FeedingOrganizationService.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\mini-hw-2\\Services\\FeedingOrganizationService.cs",
+              "RelativeToolTip": "mini-hw-2\\Services\\FeedingOrganizationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:35:49.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AnimalTransferService.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\mini-hw-2\\Services\\AnimalTransferService.cs",
+              "RelativeDocumentMoniker": "mini-hw-2\\Services\\AnimalTransferService.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\mini-hw-2\\Services\\AnimalTransferService.cs",
+              "RelativeToolTip": "mini-hw-2\\Services\\AnimalTransferService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:35:34.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IZooStatisticsService.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\mini-hw-2\\Interfaces\\IZooStatisticsService.cs",
+              "RelativeDocumentMoniker": "mini-hw-2\\Interfaces\\IZooStatisticsService.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\mini-hw-2\\Interfaces\\IZooStatisticsService.cs",
+              "RelativeToolTip": "mini-hw-2\\Interfaces\\IZooStatisticsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:35:20.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IFeedingOrganizationService.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\mini-hw-2\\Interfaces\\IFeedingOrganizationService.cs",
+              "RelativeDocumentMoniker": "mini-hw-2\\Interfaces\\IFeedingOrganizationService.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\mini-hw-2\\Interfaces\\IFeedingOrganizationService.cs",
+              "RelativeToolTip": "mini-hw-2\\Interfaces\\IFeedingOrganizationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:35:09.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IAnimalTransferService.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\mini-hw-2\\Interfaces\\IAnimalTransferService.cs",
+              "RelativeDocumentMoniker": "mini-hw-2\\Interfaces\\IAnimalTransferService.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\mini-hw-2\\Interfaces\\IAnimalTransferService.cs",
+              "RelativeToolTip": "mini-hw-2\\Interfaces\\IAnimalTransferService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:35:01.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Application.csproj",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\mini-hw-2\\Application.csproj",
+              "RelativeDocumentMoniker": "mini-hw-2\\Application.csproj",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\mini-hw-2\\Application.csproj",
+              "RelativeToolTip": "mini-hw-2\\Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-20T11:08:43.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "EnclosureType.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Domain\\Enums\\EnclosureType.cs",
+              "RelativeDocumentMoniker": "Domain\\Enums\\EnclosureType.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Domain\\Enums\\EnclosureType.cs",
+              "RelativeToolTip": "Domain\\Enums\\EnclosureType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:33:30.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Gender.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Domain\\Enums\\Gender.cs",
+              "RelativeDocumentMoniker": "Domain\\Enums\\Gender.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Domain\\Enums\\Gender.cs",
+              "RelativeToolTip": "Domain\\Enums\\Gender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:33:12.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AnimalStatus.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Domain\\Enums\\AnimalStatus.cs",
+              "RelativeDocumentMoniker": "Domain\\Enums\\AnimalStatus.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Domain\\Enums\\AnimalStatus.cs",
+              "RelativeToolTip": "Domain\\Enums\\AnimalStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:33:02.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "FeedingTimeEvent.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Domain\\FeedingTimeEvent.cs",
+              "RelativeDocumentMoniker": "Domain\\FeedingTimeEvent.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Domain\\FeedingTimeEvent.cs",
+              "RelativeToolTip": "Domain\\FeedingTimeEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:16:21.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AnimalMovedEventc.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Domain\\AnimalMovedEventc.cs",
+              "RelativeDocumentMoniker": "Domain\\AnimalMovedEventc.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Domain\\AnimalMovedEventc.cs",
+              "RelativeToolTip": "Domain\\AnimalMovedEventc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:16:10.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FeedingSchedule.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Domain\\Entities\\FeedingSchedule.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\FeedingSchedule.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Domain\\Entities\\FeedingSchedule.cs",
+              "RelativeToolTip": "Domain\\Entities\\FeedingSchedule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:11:44.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Enclosure.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Domain\\Entities\\Enclosure.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Enclosure.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Domain\\Entities\\Enclosure.cs",
+              "RelativeToolTip": "Domain\\Entities\\Enclosure.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:11:34.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AnimalsController.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Presentation\\Controllers\\AnimalsController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\AnimalsController.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Presentation\\Controllers\\AnimalsController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\AnimalsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:09:27.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Animal.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Domain\\Entities\\Animal.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Animal.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\Domain\\Entities\\Animal.cs",
+              "RelativeToolTip": "Domain\\Entities\\Animal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:08:30.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ZooStatisticsService.cs",
+              "DocumentMoniker": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\mini-hw-2\\Services\\ZooStatisticsService.cs",
+              "RelativeDocumentMoniker": "mini-hw-2\\Services\\ZooStatisticsService.cs",
+              "ToolTip": "C:\\Users\\schur\\OneDrive\\Desktop\\mini-hw-2\\mini-hw-2\\Services\\ZooStatisticsService.cs",
+              "RelativeToolTip": "mini-hw-2\\Services\\ZooStatisticsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T10:58:26.063Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

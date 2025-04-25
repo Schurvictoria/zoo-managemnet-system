@@ -1,0 +1,5 @@
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\mini-hw-2\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\mini-hw-2\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\mini-hw-2\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\mini-hw-2\obj\Debug\net6.0\Application.AssemblyInfo.cs
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\mini-hw-2\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
