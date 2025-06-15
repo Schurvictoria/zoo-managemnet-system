@@ -215,8 +215,8 @@ var assemblies = [
     "classes": [
       { "name": "Application.Configuration.AppSettings", "rp": "Application_AppSettings.html", "cl": 1, "ucl": 1, "cal": 2, "tl": 19, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Application.Configuration.DatabaseSettings", "rp": "Application_DatabaseSettings.html", "cl": 0, "ucl": 1, "cal": 1, "tl": 19, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "Application.Configuration.LoggingSettings", "rp": "Application_LoggingSettings.html", "cl": 1, "ucl": 1, "cal": 2, "tl": 19, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "Application.Extensions.ServiceCollectionExtensions", "rp": "Application_ServiceCollectionExtensions.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 15, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Application.Configuration.LoggingSettings", "rp": "Application_LoggingSettings.html", "cl": 2, "ucl": 0, "cal": 2, "tl": 19, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Application.Extensions.ServiceCollectionExtensions", "rp": "Application_ServiceCollectionExtensions.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 15, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Application.Services.AnimalService", "rp": "Application_AnimalService.html", "cl": 15, "ucl": 0, "cal": 15, "tl": 32, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Application.Services.AnimalTransferService", "rp": "Application_AnimalTransferService.html", "cl": 41, "ucl": 10, "cal": 51, "tl": 88, "cb": 12, "tb": 14, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Application.Services.FeedingOrganizationService", "rp": "Application_FeedingOrganizationService.html", "cl": 11, "ucl": 0, "cal": 11, "tl": 26, "cb": 2, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
@@ -226,20 +226,20 @@ var assemblies = [
   {
     "name": "Domain",
     "classes": [
-      { "name": "Domain.Entities.Animal", "rp": "Domain_Animal.html", "cl": 20, "ucl": 3, "cal": 23, "tl": 36, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "Domain.Entities.Enclosure", "rp": "Domain_Enclosure.html", "cl": 16, "ucl": 1, "cal": 17, "tl": 34, "cb": 2, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "Domain.Entities.FeedingSchedule", "rp": "Domain_FeedingSchedule.html", "cl": 14, "ucl": 8, "cal": 22, "tl": 40, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "Domain.ValueObjects.AnimalName", "rp": "Domain_AnimalName.html", "cl": 0, "ucl": 9, "cal": 9, "tl": 21, "cb": 0, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "Domain.ValueObjects.FoodType", "rp": "Domain_FoodType.html", "cl": 0, "ucl": 9, "cal": 9, "tl": 21, "cb": 0, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Domain.Entities.Animal", "rp": "Domain_Animal.html", "cl": 23, "ucl": 0, "cal": 23, "tl": 36, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Domain.Entities.Enclosure", "rp": "Domain_Enclosure.html", "cl": 17, "ucl": 0, "cal": 17, "tl": 34, "cb": 2, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Domain.Entities.FeedingSchedule", "rp": "Domain_FeedingSchedule.html", "cl": 22, "ucl": 0, "cal": 22, "tl": 40, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Domain.ValueObjects.AnimalName", "rp": "Domain_AnimalName.html", "cl": 7, "ucl": 2, "cal": 9, "tl": 21, "cb": 1, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Domain.ValueObjects.FoodType", "rp": "Domain_FoodType.html", "cl": 7, "ucl": 2, "cal": 9, "tl": 21, "cb": 1, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
     ]},
   {
     "name": "Infrastructure",
     "classes": [
       { "name": "Infrastructure.Data.ZooDbContext", "rp": "Infrastructure_ZooDbContext.html", "cl": 0, "ucl": 3, "cal": 3, "tl": 14, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Infrastructure.Extensions.ServiceCollectionExtensions", "rp": "Infrastructure_ServiceCollectionExtensions.html", "cl": 0, "ucl": 8, "cal": 8, "tl": 23, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "Infrastructure.Repositories.AnimalRepository", "rp": "Infrastructure_AnimalRepository.html", "cl": 0, "ucl": 31, "cal": 31, "tl": 56, "cb": 0, "tb": 4, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "Infrastructure.Repositories.EnclosureRepository", "rp": "Infrastructure_EnclosureRepository.html", "cl": 0, "ucl": 27, "cal": 27, "tl": 50, "cb": 0, "tb": 4, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "Infrastructure.Repositories.FeedingScheduleRepository", "rp": "Infrastructure_FeedingScheduleRepository.html", "cl": 0, "ucl": 21, "cal": 21, "tl": 45, "cb": 0, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Infrastructure.Repositories.AnimalRepository", "rp": "Infrastructure_AnimalRepository.html", "cl": 31, "ucl": 0, "cal": 31, "tl": 56, "cb": 4, "tb": 4, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Infrastructure.Repositories.EnclosureRepository", "rp": "Infrastructure_EnclosureRepository.html", "cl": 27, "ucl": 0, "cal": 27, "tl": 50, "cb": 4, "tb": 4, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Infrastructure.Repositories.FeedingScheduleRepository", "rp": "Infrastructure_FeedingScheduleRepository.html", "cl": 21, "ucl": 0, "cal": 21, "tl": 45, "cb": 2, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
     ]},
 ];
 
