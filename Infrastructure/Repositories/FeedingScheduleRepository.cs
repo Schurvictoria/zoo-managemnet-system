@@ -1,18 +1,45 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using ZooManagementSystem.Domain.Entities;
+using Domain.Entities;
+using Domain.Interfaces;
 
 namespace Infrastructure.Repositories
 {
-    public class FeedingScheduleRepository
+    public class FeedingScheduleRepository : IFeedingScheduleRepository
     {
         private readonly List<FeedingSchedule> _schedules = new();
 
-        public void Add(FeedingSchedule fs) => _schedules.Add(fs);
-        public FeedingSchedule GetById(Guid id) => _schedules.First(s => s.Id == id);
-        public List<FeedingSchedule> GetAll() => _schedules;
+        public Task AddAsync(FeedingSchedule feedingSchedule)
+        {
+            _schedules.Add(feedingSchedule);
+            return Task.CompletedTask;
+        }
+
+        public Task DeleteAsync(string id)
+        {
+            var schedule = _schedules.FirstOrDefault(s => s.Id.ToString() == id);
+            if (schedule != null)
+                _schedules.Remove(schedule);
+            return Task.CompletedTask;
+        }
+
+        public Task<IEnumerable<FeedingSchedule>> GetAllAsync()
+        {
+            return Task.FromResult<IEnumerable<FeedingSchedule>>(_schedules);
+        }
+
+        public Task<FeedingSchedule> GetByIdAsync(string id)
+        {
+            var schedule = _schedules.FirstOrDefault(s => s.Id.ToString() == id);
+            return Task.FromResult(schedule);
+        }
+
+        public Task UpdateAsync(FeedingSchedule feedingSchedule)
+        {
+            // Для in-memory коллекции ничего делать не нужно
+            return Task.CompletedTask;
+        }
     }
 }

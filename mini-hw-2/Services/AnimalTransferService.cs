@@ -1,36 +1,42 @@
 ﻿using mini_hw_2.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using mini_hw_2.Domain.Entities;
-
+using Domain.Entities;
+using Domain.Interfaces;
 
 namespace mini_hw_2.Services
 {
     public class AnimalTransferService : IAnimalTransferService
     {
-        private readonly AnimalRepository _animalRepo;
-        private readonly EnclosureRepository _enclosureRepo;
+        private readonly IAnimalRepository _animalRepo;
+        private readonly IEnclosureRepository _enclosureRepo;
 
-        public AnimalTransferService(AnimalRepository animalRepo, EnclosureRepository enclosureRepo)
+        public AnimalTransferService(IAnimalRepository animalRepo, IEnclosureRepository enclosureRepo)
         {
             _animalRepo = animalRepo;
             _enclosureRepo = enclosureRepo;
         }
 
-        public void TransferAnimal(Guid animalId, Guid fromId, Guid toId)
+        public async Task TransferAnimalAsync(Guid animalId, Guid fromId, Guid toId)
         {
-            var animal = _animalRepo.GetById(animalId);
-            var from = _enclosureRepo.GetById(fromId);
-            var to = _enclosureRepo.GetById(toId);
+            var animal = await _animalRepo.GetByIdAsync(animalId.ToString());
+            var from = await _enclosureRepo.GetByIdAsync(fromId.ToString());
+            var to = await _enclosureRepo.GetByIdAsync(toId.ToString());
 
             from.RemoveAnimal(animal);
             if (!to.AddAnimal(animal))
                 throw new InvalidOperationException("Целевой вольер переполнен");
 
+            await _animalRepo.UpdateAsync(animal);
+            await _enclosureRepo.UpdateAsync(from);
+            await _enclosureRepo.UpdateAsync(to);
+
             Console.WriteLine($"AnimalMovedEvent: {animal.Id}");
+        }
+
+        void IAnimalTransferService.TransferAnimal(Guid animalId, Guid fromEnclosureId, Guid toEnclosureId)
+        {
+            TransferAnimalAsync(animalId, fromEnclosureId, toEnclosureId).GetAwaiter().GetResult();
         }
     }
 }

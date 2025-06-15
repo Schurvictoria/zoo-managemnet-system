@@ -1,18 +1,45 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using Domain.Entities;
+using Domain.Interfaces;
 
 namespace Infrastructure.Repositories
 {
-    public class AnimalRepository
+    public class AnimalRepository : IAnimalRepository
     {
         private readonly List<Animal> _animals = new();
 
-        public void Add(Animal animal) => _animals.Add(animal);
-        public void Remove(Animal animal) => _animals.Remove(animal);
-        public Animal GetById(Guid id) => _animals.First(x => x.Id == id);
-        public List<Animal> GetAll() => _animals;
+        public Task AddAsync(Animal animal)
+        {
+            _animals.Add(animal);
+            return Task.CompletedTask;
+        }
+
+        public Task DeleteAsync(string id)
+        {
+            var animal = _animals.FirstOrDefault(x => x.Id.ToString() == id);
+            if (animal != null)
+                _animals.Remove(animal);
+            return Task.CompletedTask;
+        }
+
+        public Task<IEnumerable<Animal>> GetAllAsync()
+        {
+            return Task.FromResult<IEnumerable<Animal>>(_animals);
+        }
+
+        public Task<Animal> GetByIdAsync(string id)
+        {
+            var animal = _animals.FirstOrDefault(x => x.Id.ToString() == id);
+            return Task.FromResult(animal);
+        }
+
+        public Task UpdateAsync(Animal animal)
+        {
+            // Для in-memory коллекции ничего делать не нужно
+            return Task.CompletedTask;
+        }
     }
 }

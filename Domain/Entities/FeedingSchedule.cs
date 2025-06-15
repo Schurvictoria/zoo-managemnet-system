@@ -12,6 +12,7 @@ namespace Domain.Entities
         public Animal Animal { get; private set; }
         public DateTime FeedingTime { get; private set; }
         public string FoodType { get; private set; }
+        public bool IsCompleted { get; private set; }
 
         public FeedingSchedule(Animal animal, DateTime feedingTime, string foodType)
         {
@@ -26,6 +27,11 @@ namespace Domain.Entities
         {
             Animal.Feed();
             Console.WriteLine($"Кормление {Animal.Name} завершено.");
+        }
+
+        public void MarkAsCompleted()
+        {
+            IsCompleted = true;
         }
     }
 }

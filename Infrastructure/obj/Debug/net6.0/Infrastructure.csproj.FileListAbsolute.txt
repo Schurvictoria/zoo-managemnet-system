@@ -3,3 +3,14 @@ C:\Users\schur\OneDrive\Desktop\mini-hw-2\Infrastructure\obj\Debug\net6.0\Infras
 C:\Users\schur\OneDrive\Desktop\mini-hw-2\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfoInputs.cache
 C:\Users\schur\OneDrive\Desktop\mini-hw-2\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfo.cs
 C:\Users\schur\OneDrive\Desktop\mini-hw-2\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Infrastructure\obj\Debug\net6.0\Infrastructure.sourcelink.json
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Infrastructure\bin\Debug\net6.0\Infrastructure.deps.json
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Infrastructure\bin\Debug\net6.0\Infrastructure.dll
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Infrastructure\bin\Debug\net6.0\Infrastructure.pdb
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Infrastructure\bin\Debug\net6.0\Domain.dll
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Infrastructure\bin\Debug\net6.0\Domain.pdb
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Infrastructure\obj\Debug\net6.0\Infrastr.15EFFBFE.Up2Date
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Infrastructure\obj\Debug\net6.0\Infrastructure.dll
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.dll
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll

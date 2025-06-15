@@ -3,25 +3,35 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ZooManagementSystem.Domain.Entities;
-using ZooManagementSystem.Infrastructure.Repositories;
-using ZooManagementSystem.Application.Services;
-
+using Xunit;
+using Domain.Entities;
+using Domain.Enums;
+using Infrastructure.Repositories;
+using mini_hw_2.Services;
+using mini_hw_2.Interfaces;
+using Moq;
 
 namespace Tests
 {
-    [Fact]
-    public void Should_Feed_Animal_According_To_Schedule()
+    public class FeedingOrganizationServiceTests
     {
-        var animal = new Animal("Elephant", "Dumbo", DateTime.Now.AddYears(-5), Gender.Male, "Fruit");
-        var schedule = new FeedingSchedule(animal, DateTime.Now, "Fruit");
+        [Fact]
+        public void Should_Feed_Animal_According_To_Schedule()
+        {
+            // Arrange
+            var animal = new Animal("Elephant", "Dumbo", DateTime.Now.AddYears(-5), Gender.Male, "Fruit");
+            var schedule = new FeedingSchedule(animal, DateTime.Now, "Fruit");
 
-        var repo = new FeedingScheduleRepository();
-        repo.Add(schedule);
+            var mockRepo = new Mock<IFeedingScheduleRepository>();
+            mockRepo.Setup(repo => repo.GetById(schedule.Id)).ReturnsAsync(schedule);
 
-        var service = new FeedingOrganizationService(repo);
-        service.FeedAnimal(schedule.Id);
+            var service = new FeedingOrganizationService(mockRepo.Object);
 
-        Assert.True(true);
+            // Act
+            service.FeedAnimal(schedule.Id);
+
+            // Assert
+            mockRepo.Verify(repo => repo.Update(schedule), Times.Once);
+        }
     }
 }

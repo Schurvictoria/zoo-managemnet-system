@@ -9,3 +9,7 @@ C:\Users\schur\OneDrive\Desktop\mini-hw-2\Presentation\obj\Debug\net6.0\Presenta
 C:\Users\schur\OneDrive\Desktop\mini-hw-2\Presentation\obj\Debug\net6.0\refint\Presentation.dll
 C:\Users\schur\OneDrive\Desktop\mini-hw-2\Presentation\obj\Debug\net6.0\Presentation.pdb
 C:\Users\schur\OneDrive\Desktop\mini-hw-2\Presentation\obj\Debug\net6.0\ref\Presentation.dll
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Presentation\obj\Debug\net6.0\Presentation.csproj.AssemblyReference.cache
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Presentation\obj\Debug\net6.0\Presentation.sourcelink.json
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Presentation\obj\Debug\net6.0\Presentation.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\schur\OneDrive\Desktop\mini-hw-2\Presentation\obj\Debug\net6.0\Presentation.MvcApplicationPartsAssemblyInfo.cache

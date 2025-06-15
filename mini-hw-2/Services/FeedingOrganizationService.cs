@@ -1,24 +1,21 @@
 ﻿using mini_hw_2.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Domain.Interfaces;
 
 namespace mini_hw_2.Services
 {
     public class FeedingOrganizationService : IFeedingOrganizationService
     {
-        private readonly FeedingScheduleRepository _scheduleRepo;
+        private readonly IFeedingScheduleRepository _scheduleRepo;
 
-        public FeedingOrganizationService(FeedingScheduleRepository scheduleRepo)
+        public FeedingOrganizationService(IFeedingScheduleRepository scheduleRepo)
         {
             _scheduleRepo = scheduleRepo;
         }
 
         public void FeedAnimal(Guid scheduleId)
         {
-            var schedule = _scheduleRepo.GetById(scheduleId);
+            var schedule = _scheduleRepo.GetByIdAsync(scheduleId.ToString()).Result;
             schedule.MarkAsFed();
             Console.WriteLine($"FeedingTimeEvent: {scheduleId}");
         }

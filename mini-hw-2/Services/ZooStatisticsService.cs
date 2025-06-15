@@ -1,26 +1,29 @@
 ﻿using mini_hw_2.Interfaces;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Domain.Interfaces;
 
 namespace mini_hw_2.Services
 {
     public class ZooStatisticsService : IZooStatisticsService
     {
-        private readonly AnimalRepository _animalRepo;
-        private readonly EnclosureRepository _enclosureRepo;
+        private readonly IAnimalRepository _animalRepo;
+        private readonly IEnclosureRepository _enclosureRepo;
 
-        public ZooStatisticsService(AnimalRepository animalRepo, EnclosureRepository enclosureRepo)
+        public ZooStatisticsService(IAnimalRepository animalRepo, IEnclosureRepository enclosureRepo)
         {
             _animalRepo = animalRepo;
             _enclosureRepo = enclosureRepo;
         }
 
-        public int GetAnimalCount() => _animalRepo.GetAll().Count;
+        public int GetAnimalCount()
+        {
+            return _animalRepo.GetAllAsync().Result.Count();
+        }
 
-        public int GetFreeEnclosureCount() =>
-            _enclosureRepo.GetAll().Count(e => e.Animals.Count < e.Capacity);
+        public int GetFreeEnclosureCount()
+        {
+            return _enclosureRepo.GetAllAsync().Result.Count(e => e.Animals.Count < e.Capacity);
+        }
     }
 }
