@@ -1,24 +1,26 @@
-using Domain.Interfaces;
-using Domain.Entities;
 using System;
-using System.Threading.Tasks;
+using Domain.Interfaces;
+using Application.Interfaces;
 
 namespace Application.Services
 {
-    public class FeedingOrganizationService
+    public class FeedingOrganizationService : IFeedingOrganizationService
     {
-        private readonly IFeedingScheduleRepository _scheduleRepo;
+        private readonly IFeedingScheduleRepository _feedingScheduleRepo;
 
-        public FeedingOrganizationService(IFeedingScheduleRepository scheduleRepo)
+        public FeedingOrganizationService(IFeedingScheduleRepository feedingScheduleRepo)
         {
-            _scheduleRepo = scheduleRepo;
+            _feedingScheduleRepo = feedingScheduleRepo;
         }
 
-        public async Task FeedAnimalAsync(Guid scheduleId)
+        public void FeedAnimal(Guid feedingScheduleId)
         {
-            var schedule = await _scheduleRepo.GetByIdAsync(scheduleId.ToString());
-            schedule.MarkAsCompleted();
-            Console.WriteLine($"FeedingTimeEvent: {scheduleId}");
+            var schedule = _feedingScheduleRepo.GetByIdAsync(feedingScheduleId.ToString()).Result;
+            if (schedule != null)
+            {
+                // Реализация кормления животного
+                Console.WriteLine($"Кормление животного по расписанию {feedingScheduleId}");
+            }
         }
     }
 } 

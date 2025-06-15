@@ -1,44 +1,88 @@
-using Domain.Interfaces;
-using Domain.Entities;
 using System;
 using System.Threading.Tasks;
+using Domain.Entities;
+using Domain.Interfaces;
+using Application.Interfaces;
 
 namespace Application.Services
 {
-    public class AnimalTransferService
+    public class AnimalTransferService : IAnimalTransferService, IBaseService
     {
         private readonly IAnimalRepository _animalRepo;
         private readonly IEnclosureRepository _enclosureRepo;
+        private readonly ILoggingService _logger;
 
-        public AnimalTransferService(IAnimalRepository animalRepo, IEnclosureRepository enclosureRepo)
+        public AnimalTransferService(
+            IAnimalRepository animalRepo, 
+            IEnclosureRepository enclosureRepo,
+            ILoggingService logger)
         {
             _animalRepo = animalRepo;
             _enclosureRepo = enclosureRepo;
+            _logger = logger;
+        }
+
+        public async Task<bool> ValidateAsync()
+        {
+            try
+            {
+                var animals = await _animalRepo.GetAllAsync();
+                var enclosures = await _enclosureRepo.GetAllAsync();
+                return animals != null && enclosures != null;
+            }
+            catch (Exception ex)
+            {
+                await _logger.LogErrorAsync("Validation failed", ex);
+                return false;
+            }
         }
 
         public async Task TransferAnimalAsync(Guid animalId, Guid fromId, Guid toId)
         {
-            var animal = await _animalRepo.GetByIdAsync(animalId.ToString());
-            var from = await _enclosureRepo.GetByIdAsync(fromId.ToString());
-            var to = await _enclosureRepo.GetByIdAsync(toId.ToString());
+            try
+            {
+                var animal = await _animalRepo.GetByIdAsync(animalId.ToString());
+                if (animal == null)
+                {
+                    throw new InvalidOperationException($"Животное с ID {animalId} не найдено");
+                }
 
-            if (animal == null || from == null || to == null)
-                throw new InvalidOperationException("Animal or enclosure not found");
+                var from = await _enclosureRepo.GetByIdAsync(fromId.ToString());
+                if (from == null)
+                {
+                    throw new InvalidOperationException($"Исходный вольер с ID {fromId} не найден");
+                }
 
-            if (animal.Enclosure == null || animal.Enclosure.Id != from.Id)
-                throw new InvalidOperationException("Animal is not in the specified source enclosure");
+                var to = await _enclosureRepo.GetByIdAsync(toId.ToString());
+                if (to == null)
+                {
+                    throw new InvalidOperationException($"Целевой вольер с ID {toId} не найден");
+                }
 
-            from.RemoveAnimal(animal);
-            if (!to.AddAnimal(animal))
-                throw new InvalidOperationException("Target enclosure is full");
+                if (animal.Enclosure == null || animal.Enclosure.Id != from.Id)
+                {
+                    throw new InvalidOperationException("Животное не находится в указанном исходном вольере");
+                }
 
-            animal.UpdateEnclosure(to);
+                from.RemoveAnimal(animal);
+                if (!to.AddAnimal(animal))
+                {
+                    throw new InvalidOperationException("Целевой вольер переполнен");
+                }
 
-            await _animalRepo.UpdateAsync(animal);
-            await _enclosureRepo.UpdateAsync(from);
-            await _enclosureRepo.UpdateAsync(to);
+                animal.UpdateEnclosure(to);
 
-            Console.WriteLine($"AnimalMovedEvent: {animal.Id}");
+                await _animalRepo.UpdateAsync(animal);
+                await _enclosureRepo.UpdateAsync(from);
+                await _enclosureRepo.UpdateAsync(to);
+
+                await _logger.LogInfoAsync($"Животное {animalId} успешно перемещено из вольера {fromId} в вольер {toId}");
+            }
+            catch (Exception ex)
+            {
+                await _logger.LogErrorAsync($"Ошибка при перемещении животного {animalId}", ex);
+                throw;
+            }
         }
     }
 } 

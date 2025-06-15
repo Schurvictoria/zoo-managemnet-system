@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
@@ -30,6 +27,8 @@ namespace Domain.Entities
         }
 
         public void RemoveAnimal(Animal animal) => _animals.Remove(animal);
-        public void Clean() => Console.WriteLine("Вольер убран");
+        
+        // This method should be implemented with proper logging or event system
+        public void Clean() { }
     }
 }
