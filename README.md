@@ -64,7 +64,8 @@
    ```
 5. Для просмотра API через Swagger откройте браузер и перейдите по адресу http://localhost:5000/swagger (или порт, указанный в консоли).
 ![image](https://github.com/user-attachments/assets/c2672aeb-221d-4eda-bc36-20920a62ed3c)
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/c846403c-140b-4f52-84c4-c28c5fb2d024)
+
 
 ## Тесты
 - Покрытие тестами: более 65% кода (папка `Tests`).
