@@ -63,10 +63,16 @@
    dotnet test
    ```
 5. Для просмотра API через Swagger откройте браузер и перейдите по адресу http://localhost:5000/swagger (или порт, указанный в консоли).
+![image](https://github.com/user-attachments/assets/c2672aeb-221d-4eda-bc36-20920a62ed3c)
+![image](https://github.com/user-attachments/assets/c846403c-140b-4f52-84c4-c28c5fb2d024)
+
 
 ## Тесты
 - Покрытие тестами: более 65% кода (папка `Tests`).
 - Тестируются основные сервисы, Value Objects, доменные сущности и репозитории.
+
+  ![image](https://github.com/user-attachments/assets/0fde0c5c-cc82-4a93-93e5-7129240d8cd9)
+
 
 ## Соответствие требованиям задания
 - Все основные требования и use cases реализованы.
