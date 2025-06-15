@@ -48,18 +48,18 @@
 ## Как запустить проект
 
 1. Откройте терминал в корне проекта.
-2. Выполните сборку всех проектов командой:
+2. Выполните сборку решения командой:
    ```sh
-   dotnet build mini-hw-2.sln
+   dotnet build
    ```
-3. Запустите слой Presentation (Web API):
+3. Запустите веб-приложение:
    ```sh
-   dotnet run --project Presentation/Presentation.csproj
+   cd Presentation
+   dotnet run
    ```
    После запуска API будет доступен по адресу, указанному в консоли (обычно http://localhost:5000 или http://localhost:5001).
-4. (Опционально) Для запуска тестов выполните:
+4. Для запуска тестов выполните:
    ```sh
-   cd Tests
    dotnet test
    ```
 5. Для просмотра API через Swagger откройте браузер и перейдите по адресу http://localhost:5000/swagger (или порт, указанный в консоли).
