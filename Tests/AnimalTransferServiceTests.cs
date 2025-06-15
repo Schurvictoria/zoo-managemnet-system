@@ -24,7 +24,6 @@ namespace Tests
         [Fact]
         public async Task TransferAnimal_ValidTransfer_ShouldSucceed()
         {
-            // Arrange
             var animalId = Guid.NewGuid();
             var fromId = Guid.NewGuid();
             var toId = Guid.NewGuid();
@@ -37,10 +36,8 @@ namespace Tests
             _enclosureRepoMock.Setup(x => x.GetByIdAsync(fromId.ToString())).ReturnsAsync(fromEnclosure);
             _enclosureRepoMock.Setup(x => x.GetByIdAsync(toId.ToString())).ReturnsAsync(toEnclosure);
 
-            // Act
             await _service.TransferAnimalAsync(animalId, fromId, toId);
 
-            // Assert
             _animalRepoMock.Verify(x => x.UpdateAsync(animal), Times.Once);
             _enclosureRepoMock.Verify(x => x.UpdateAsync(fromEnclosure), Times.Once);
             _enclosureRepoMock.Verify(x => x.UpdateAsync(toEnclosure), Times.Once);

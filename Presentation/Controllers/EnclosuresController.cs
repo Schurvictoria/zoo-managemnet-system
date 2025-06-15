@@ -46,7 +46,6 @@ namespace Presentation.Controllers
             {
                 var enclosures = await _enclosureRepository.GetAllAsync();
 
-                // Apply filters
                 if (!string.IsNullOrEmpty(type))
                 {
                     if (!Enum.TryParse<EnclosureType>(type, out var enclosureType))
@@ -56,7 +55,6 @@ namespace Presentation.Controllers
                     enclosures = enclosures.Where(e => e.Type == enclosureType);
                 }
 
-                // Apply pagination
                 var totalCount = enclosures.Count();
                 var totalPages = (int)Math.Ceiling(totalCount / (double)pageSize);
                 var pagedEnclosures = enclosures
@@ -129,7 +127,6 @@ namespace Presentation.Controllers
                     return NotFound(new { error = "Enclosure not found", enclosureId = id });
                 }
 
-                // Check if enclosure has animals
                 var animals = await _animalRepository.GetAnimalsByEnclosureAsync(id);
                 if (animals.Any())
                 {

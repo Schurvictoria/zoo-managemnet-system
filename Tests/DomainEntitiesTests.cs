@@ -13,16 +13,13 @@ namespace Tests
             var enclosure2 = new Enclosure(EnclosureType.Herbivore, 2);
             var animal = new Animal("Lion", "Simba", DateTime.Now, Gender.Male, "Meat", enclosure1);
 
-            // Feed (просто вызов, проверяем что не падает)
             animal.Feed();
 
-            // SetSick и Heal
             animal.SetSick();
             Assert.Equal(AnimalStatus.Sick, animal.Status);
             animal.Heal();
             Assert.Equal(AnimalStatus.Healthy, animal.Status);
 
-            // UpdateEnclosure
             animal.UpdateEnclosure(enclosure2);
             Assert.Equal(enclosure2, animal.Enclosure);
         }
@@ -34,16 +31,13 @@ namespace Tests
             var animal1 = new Animal("Lion", "Simba", DateTime.Now, Gender.Male, "Meat", enclosure);
             var animal2 = new Animal("Tiger", "Shere Khan", DateTime.Now, Gender.Male, "Meat", enclosure);
 
-            // Добавить животное (есть место)
             var added = enclosure.AddAnimal(animal1);
             Assert.True(added);
             Assert.Contains(animal1, enclosure.Animals);
 
-            // Добавить второе (нет места)
             var added2 = enclosure.AddAnimal(animal2);
             Assert.False(added2);
 
-            // Удалить животное
             enclosure.RemoveAnimal(animal1);
             Assert.DoesNotContain(animal1, enclosure.Animals);
         }
@@ -52,7 +46,7 @@ namespace Tests
         public void Enclosure_Clean_DoesNotThrow()
         {
             var enclosure = new Enclosure(EnclosureType.Predator, 1);
-            enclosure.Clean(); // просто вызов, проверяем что не падает
+            enclosure.Clean();
         }
 
         [Fact]
@@ -62,29 +56,23 @@ namespace Tests
             var animal = new Animal("Elephant", "Dumbo", DateTime.Now, Gender.Male, "Fruit", enclosure);
             var schedule = new FeedingSchedule(animal, DateTime.Now, "Fruit");
 
-            // Reschedule
             var newTime = DateTime.Now.AddHours(1);
             schedule.Reschedule(newTime);
             Assert.Equal(newTime, schedule.FeedingTime);
 
-            // UpdateAnimal
             var animal2 = new Animal("Giraffe", "Melman", DateTime.Now, Gender.Male, "Leaves", enclosure);
             schedule.UpdateAnimal(animal2);
             Assert.Equal(animal2, schedule.Animal);
 
-            // UpdateFoodType
             schedule.UpdateFoodType("Leaves");
             Assert.Equal("Leaves", schedule.FoodType);
 
-            // UpdateFeedingTime
             var anotherTime = DateTime.Now.AddHours(2);
             schedule.UpdateFeedingTime(anotherTime);
             Assert.Equal(anotherTime, schedule.FeedingTime);
 
-            // MarkAsFed (просто вызов, проверяем что не падает)
             schedule.MarkAsFed();
 
-            // MarkAsCompleted
             schedule.MarkAsCompleted();
             Assert.True(schedule.IsCompleted);
         }

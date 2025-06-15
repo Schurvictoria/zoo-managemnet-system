@@ -8,7 +8,6 @@ namespace Application.Extensions
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
             services.AddScoped<AnimalService>();
-            // Добавь другие сервисы по необходимости
             return services;
         }
     }

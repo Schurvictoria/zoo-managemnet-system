@@ -51,7 +51,6 @@ namespace Presentation.Controllers
             try
             {
                 var animals = await _animalService.GetAllAnimalsAsync();
-                // Apply filters
                 if (!string.IsNullOrEmpty(species))
                     animals = animals.Where(a => a.Species == species);
                 if (!string.IsNullOrEmpty(enclosureId))
@@ -100,7 +99,6 @@ namespace Presentation.Controllers
                     return BadRequest(new { error = "Enclosure capacity must be greater than 0" });
                 }
 
-                // Check if enclosure has capacity
                 var currentAnimals = await _animalService.GetAllAnimalsAsync();
                 var enclosureAnimals = currentAnimals.Count(a => a.Enclosure != null && a.Enclosure.Id == enclosure.Id);
                 if (enclosureAnimals >= enclosure.Capacity)

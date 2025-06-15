@@ -6,7 +6,6 @@ public sealed record AnimalName
 {
     public string Value { get; private set; }
 
-    // Для EF Core
     private AnimalName() { }
 
     public AnimalName(string value)

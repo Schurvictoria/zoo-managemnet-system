@@ -38,7 +38,6 @@ namespace Infrastructure.Repositories
 
         public Task UpdateAsync(FeedingSchedule feedingSchedule)
         {
-            // Для in-memory коллекции ничего делать не нужно
             return Task.CompletedTask;
         }
     }

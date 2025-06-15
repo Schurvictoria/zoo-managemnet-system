@@ -37,7 +37,7 @@ namespace Tests
             enclosure1.AddAnimal(new Animal("Lion", "Simba", DateTime.Now, Gender.Male, "Meat", enclosure1));
             _enclosureRepoMock.Setup(r => r.GetAllAsync()).ReturnsAsync(new List<Enclosure> { enclosure1, enclosure2 });
             var count = await _service.GetFreeEnclosureCountAsync();
-            Assert.Equal(2, count); // оба не заполнены полностью
+            Assert.Equal(2, count);
         }
 
         [Fact]

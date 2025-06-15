@@ -9,11 +9,9 @@ using Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
-// Add Swagger
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo 
@@ -24,20 +22,16 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// Add logging
 builder.Services.AddLogging(logging =>
 {
     logging.AddConsole();
     logging.AddDebug();
 });
 
-// Add memory cache
 builder.Services.AddMemoryCache();
 
-// Add metrics
 builder.Services.AddMetricServer(options => { });
 
-// Add application services
 builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddScoped<Application.Services.ZooStatisticsService>();
@@ -45,17 +39,14 @@ builder.Services.AddScoped<Application.Services.AnimalTransferService>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline
 app.UseSwagger();
 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Zoo API v1"));
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
 
-// Add error handling middleware
 app.UseMiddleware<ErrorHandlingMiddleware>();
 
-// Add metrics endpoints
 app.UseMetricServer();
 app.UseHttpMetrics();
 

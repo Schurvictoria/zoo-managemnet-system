@@ -48,13 +48,11 @@ namespace Presentation.Controllers
             {
                 var schedules = await _feedingScheduleRepository.GetAllAsync();
 
-                // Apply filters
                 if (!string.IsNullOrEmpty(animalId))
                     schedules = schedules.Where(f => f.Animal.Id.ToString() == animalId);
                 if (date.HasValue)
                     schedules = schedules.Where(f => f.FeedingTime.Date == date.Value.Date);
 
-                // Apply pagination
                 var totalCount = schedules.Count();
                 var totalPages = (int)Math.Ceiling(totalCount / (double)pageSize);
                 var pagedSchedules = schedules

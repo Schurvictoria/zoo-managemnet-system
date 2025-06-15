@@ -6,7 +6,6 @@ public sealed record FoodType
 {
     public string Value { get; private set; }
 
-    // Для EF Core
     private FoodType() { }
 
     public FoodType(string value)

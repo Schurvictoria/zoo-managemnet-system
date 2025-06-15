@@ -18,7 +18,6 @@ namespace Application.Services
             var schedule = _feedingScheduleRepo.GetByIdAsync(feedingScheduleId.ToString()).Result;
             if (schedule != null)
             {
-                // Реализация кормления животного
                 Console.WriteLine($"Кормление животного по расписанию {feedingScheduleId}");
             }
         }

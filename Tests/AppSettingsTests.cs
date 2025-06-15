@@ -47,7 +47,6 @@ namespace Tests
             var dbSettings = new DatabaseSettings();
             var logSettings = new LoggingSettings();
 
-            // Установить и получить свойства, если есть
             logSettings.LogFilePath = "log.txt";
             logSettings.LogLevel = "Debug";
             Assert.Equal("log.txt", logSettings.LogFilePath);
@@ -61,7 +60,7 @@ namespace Tests
         public void ServiceCollectionExtensions_Coverage()
         {
             var services = new ServiceCollection();
-            services.AddApplicationServices(); // просто вызов
+            services.AddApplicationServices();
         }
     }
 }
