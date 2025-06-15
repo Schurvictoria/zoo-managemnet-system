@@ -17,15 +17,16 @@ namespace Application.Services
             return await _animalRepository.GetAllAsync();
         }
 
-        public async Task AddAnimalAsync(string species, string name, DateTime birthDate, Gender gender, string favoriteFood)
+        public async Task<Guid> AddAnimalAsync(string species, string name, DateTime birthDate, Gender gender, string favoriteFood, Enclosure enclosure)
         {
-            var animal = new Animal(species, name, birthDate, gender, favoriteFood);
+            var animal = new Animal(species, name, birthDate, gender, favoriteFood, enclosure);
             await _animalRepository.AddAsync(animal);
+            return animal.Id;
         }
 
-        public async Task DeleteAnimalAsync(string id)
+        public async Task DeleteAnimalAsync(Guid id)
         {
-            await _animalRepository.DeleteAsync(id);
+            await _animalRepository.DeleteAsync(id.ToString());
         }
     }
 }

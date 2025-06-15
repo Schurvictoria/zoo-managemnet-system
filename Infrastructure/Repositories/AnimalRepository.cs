@@ -36,9 +36,20 @@ namespace Infrastructure.Repositories
             return Task.FromResult(animal);
         }
 
+        public Task<IEnumerable<Animal>> GetAnimalsByEnclosureAsync(string enclosureId)
+        {
+            var animals = _animals.Where(x => x.Enclosure.Id.ToString() == enclosureId);
+            return Task.FromResult(animals);
+        }
+
         public Task UpdateAsync(Animal animal)
         {
-            // Для in-memory коллекции ничего делать не нужно
+            var existingAnimal = _animals.FirstOrDefault(x => x.Id == animal.Id);
+            if (existingAnimal != null)
+            {
+                var index = _animals.IndexOf(existingAnimal);
+                _animals[index] = animal;
+            }
             return Task.CompletedTask;
         }
     }

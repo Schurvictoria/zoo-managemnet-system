@@ -22,6 +22,9 @@ namespace Domain.Entities
         }
 
         public void Reschedule(DateTime newTime) => FeedingTime = newTime;
+        public void UpdateAnimal(Animal animal) => Animal = animal;
+        public void UpdateFoodType(string foodType) => FoodType = foodType;
+        public void UpdateFeedingTime(DateTime feedingTime) => FeedingTime = feedingTime;
 
         public void MarkAsFed()
         {

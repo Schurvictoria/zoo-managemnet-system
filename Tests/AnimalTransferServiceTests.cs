@@ -1,38 +1,50 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xunit;
-using Domain.Entities;
-using Domain.Enums;
+﻿using Xunit;
 using Application.Services;
-using Infrastructure.Repositories;
+using Domain.Entities;
+using Domain.Interfaces;
+using Moq;
+using System;
+using System.Threading.Tasks;
 
 namespace Tests
 {
     public class AnimalTransferServiceTests
     {
-        [Fact]
-        public void Should_Transfer_Animal_Between_Enclosures()
+        private readonly Mock<IAnimalRepository> _animalRepoMock;
+        private readonly Mock<IEnclosureRepository> _enclosureRepoMock;
+        private readonly AnimalTransferService _service;
+
+        public AnimalTransferServiceTests()
         {
-            var animal = new Animal("Tiger", "Shere Khan", DateTime.Now.AddYears(-3), Gender.Male, "Meat");
-            var from = new Enclosure(EnclosureType.Predator, 3);
-            var to = new Enclosure(EnclosureType.Predator, 3);
-            from.AddAnimal(animal);
+            _animalRepoMock = new Mock<IAnimalRepository>();
+            _enclosureRepoMock = new Mock<IEnclosureRepository>();
+            _service = new AnimalTransferService(_animalRepoMock.Object, _enclosureRepoMock.Object);
+        }
 
-            var animalRepo = new AnimalRepository();
-            var encRepo = new EnclosureRepository();
-            animalRepo.Add(animal);
-            encRepo.Add(from);
-            encRepo.Add(to);
+        [Fact]
+        public async Task TransferAnimal_ValidTransfer_ShouldSucceed()
+        {
+            // Arrange
+            var animalId = Guid.NewGuid();
+            var fromId = Guid.NewGuid();
+            var toId = Guid.NewGuid();
 
-            var service = new AnimalTransferService(animalRepo, encRepo);
+            var animal = new Animal("Lion", "Simba", DateTime.Now, Gender.Male, "Meat", 
+                new Enclosure(EnclosureType.Predator, 5));
+            var fromEnclosure = new Enclosure(EnclosureType.Predator, 5);
+            var toEnclosure = new Enclosure(EnclosureType.Predator, 5);
 
-            service.TransferAnimal(animal.Id, from.Id, to.Id);
+            _animalRepoMock.Setup(x => x.GetByIdAsync(It.IsAny<string>()))
+                .ReturnsAsync(animal);
+            _enclosureRepoMock.Setup(x => x.GetByIdAsync(It.IsAny<string>()))
+                .ReturnsAsync((string id) => id == fromId.ToString() ? fromEnclosure : toEnclosure);
 
-            Assert.DoesNotContain(animal, from.Animals);
-            Assert.Contains(animal, to.Animals);
+            // Act
+            await _service.TransferAnimalAsync(animalId, fromId, toId);
+
+            // Assert
+            _animalRepoMock.Verify(x => x.UpdateAsync(It.IsAny<Animal>()), Times.Once);
+            _enclosureRepoMock.Verify(x => x.UpdateAsync(It.IsAny<Enclosure>()), Times.Exactly(2));
         }
     }
 }

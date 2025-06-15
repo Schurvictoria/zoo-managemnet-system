@@ -41,6 +41,7 @@ builder.Services.AddMetricServer(options => { });
 builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddScoped<Application.Services.ZooStatisticsService>();
+builder.Services.AddScoped<Application.Services.AnimalTransferService>();
 
 var app = builder.Build();
 
