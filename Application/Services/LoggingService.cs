@@ -14,7 +14,7 @@ namespace Application.Services
         public LoggingService(AppSettings settings)
         {
             _settings = settings.Logging;
-            _logFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, _settings.LogFilePath);
+            _logFilePath = _settings.LogFilePath;
         }
 
         public async Task LogInfoAsync(string message)
